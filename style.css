@@ -60,18 +60,11 @@
 
 /*----- Main Body -----*//*
 #region*/
-    #main {
+    #body {
         display: flex;
         justify-content: center;
-    }
-    #body {
         width: 100vw;
         flex-direction: column; 
-
-    }
-    .section-title {
-        font-size: 1.5em;
-        text-align: center;
     }
 /*#endregion*/
 
