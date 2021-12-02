@@ -79,16 +79,15 @@
 #region*/
     #section-1 {
         display: flex;
+        align-items: center;
         flex-direction: column;
         background-color: rgb(10, 39, 109);
-        width: 100vw;
-        max-height: 90vh; 
     }
     /*----- Grid Container -----*//*
     #region*/
         /* Grid Container */
         #section-1 > .grid-container {
-            padding: 4vw;
+            padding: 4vmin;
 
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -101,13 +100,15 @@
             justify-items: center;
 
             column-gap: 5vw;
+
+            width: 100vh;
         }
 
         /* Presenting message */
         #section-1 > .grid-container > p {
             grid-area: t;
             color: white;
-            font-size: 2vw;
+            font-size: 2vmin;
             text-align: center;
         }
 
@@ -134,7 +135,6 @@
     /* Button container */
     #button-container {
         width: 70vw;
-        align-self: center;
         display: flex;
         flex-direction: row;
     }
