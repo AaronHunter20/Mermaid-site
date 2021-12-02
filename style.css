@@ -100,28 +100,24 @@
             justify-items: center;
 
             column-gap: 5vw;
-
-            width: 100vh;
+            width: 55vw;
         }
 
         /* Presenting message */
         #section-1 > .grid-container > p {
             grid-area: t;
             color: white;
-            font-size: 2vmin;
+            font-size: 2vh;
             text-align: center;
         }
 
         /* Logo */
         #logo {
-            width: 100%;
-            object-fit: contain;
             grid-area: l;
         }
 
         /* Ariel image */
         #ariel-image {
-            width: 100%;
             grid-area: a;
         }
     /*#endregion*/
@@ -134,7 +130,7 @@
     }
     /* Button container */
     #button-container {
-        width: 70vw;
+        width: 50vw;
         display: flex;
         flex-direction: row;
     }
@@ -147,4 +143,9 @@
         border: none;
         flex: 1;
     }
+/*#endregion*/
+
+/*----- Section 2 (Calendar) -----*//*
+#region*/
+    
 /*#endregion*/
