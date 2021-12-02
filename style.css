@@ -1,0 +1,150 @@
+
+/*----- Setup -----*//*
+#region*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(242, 242, 242);
+    }
+/*#endregion*/
+
+/*----- Navagation Bar -----*//*
+#region*/
+    nav {
+        display: flex;
+        position: sticky;
+        top: 0;
+        justify-content: center;
+        background-color: white;
+    }
+    nav ul {
+        list-style: none;
+        justify-content: center;
+        display: inherit;
+    }
+    nav ul li {
+        display: inherit;
+    }
+    nav ul li a {
+        text-decoration: none;
+        justify-content: center;
+        color: black;
+        font-size: 1.3em;
+        font-weight: 500;
+        padding: 0.8em 1em;
+        align-self: center;
+    }
+    nav ul li a:hover {
+        transition: background-color 300ms ease-in-out,
+                    padding-right 300ms ease-in-out,
+                    padding-left 300ms ease-in-out;
+        background-color: rgb(237, 237, 237);
+        padding-right: 1.3em;
+        padding-left: 1.3em;
+    }
+    nav ul li :not(a:hover) {
+        transition: background-color 300ms ease-in-out,
+                    padding-right 300ms ease-in-out,
+                    padding-left 300ms ease-in-out;
+        background-color: rgb(255, 255, 255);
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+/*#endregion*/
+
+/*----- Main Body -----*//*
+#region*/
+    #main {
+        display: flex;
+        justify-content: center;
+    }
+    #body {
+        width: 100vw;
+        flex-direction: column; 
+
+    }
+    .section-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+/*#endregion*/
+
+/*----- Section 1 (Logo and Ariel image) -----*//*
+#region*/
+    #section-1 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(10, 39, 109);
+        width: 100vw;
+        max-height: 90vh; 
+    }
+    /*----- Grid Container -----*//*
+    #region*/
+        /* Grid Container */
+        #section-1 > .grid-container {
+            padding: 4vw;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            't a'
+            'l a';
+
+            align-items: center;
+            justify-items: center;
+
+            column-gap: 5vw;
+        }
+
+        /* Presenting message */
+        #section-1 > .grid-container > p {
+            grid-area: t;
+            color: white;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        /* Logo */
+        #logo {
+            width: 100%;
+            object-fit: contain;
+            grid-area: l;
+        }
+
+        /* Ariel image */
+        #ariel-image {
+            width: 100%;
+            grid-area: a;
+        }
+    /*#endregion*/
+    /* Grid Container */
+    
+    /* Performance Dates */
+    #section-1 > p {
+        text-align: center;
+        color: white
+    }
+    /* Button container */
+    #button-container {
+        width: 70vw;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+    }
+    /* Buttons */
+    #button-container > button {
+        font-size: 2.5vmin;
+        border-radius: 0.5em;
+        padding: 3vmin;
+        margin: 2em 1em;
+        border: none;
+        flex: 1;
+    }
+/*#endregion*/
