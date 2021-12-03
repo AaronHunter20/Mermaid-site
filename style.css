@@ -9,7 +9,6 @@
     }
     body {
         width: 100vw;
-        height: 100vh;
         background-color: rgb(242, 242, 242);
     }
 /*#endregion*/
@@ -58,13 +57,26 @@
     }
 /*#endregion*/
 
-/*----- Main Body -----*//*
+#main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column; 
+}
+
+/*----- Section base styles-----*//*
 #region*/
-    #body {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-        flex-direction: column; 
+    .section {
+        display: grid;
+        grid-template-areas: '';
+    }
+    .section > h1 {
+        text-align: center;
+        margin: 25px;
+    }
+    .section-img {
+        width: 400px;
+        margin: 25px;
     }
 /*#endregion*/
 
@@ -140,5 +152,9 @@
 
 /*----- Section 2 (Calendar) -----*//*
 #region*/
-    
+    #calendar-container {
+        background-color: rgb(208, 208, 208);
+        width: 500px;
+        height: 200px;
+    }
 /*#endregion*/
