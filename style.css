@@ -165,33 +165,46 @@
     #section-2 {
         background-color: white;
     }
+    
+    /* Calendar month */
+    #date {
+        text-align: left;
+    }
+
     #calendar-container {
+        --n: 7;
         width: 80vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        grid-template-rows: repeat(2, 1fr);
-
+        grid-template-columns:repeat(auto-fill,minmax(max(175px,100%/var(--n)),1fr));
+        grid-template-rows: repeat(2, auto);
         padding: 10px;
         gap: 10px;
 
         grid-auto-flow: row;
         background-color: rgb(208, 208, 208);
     }
-    /* Date title */
-    #date {
-        text-align: left;
-    }
     /* Date boxes */
     .date {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 20px;
     }
+    /* date content container */
+    .date > div {
+        padding: 10px;
+    }
+    /* Date Day */
     .date > p:first-child {
-        text-align: right;
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(233, 233, 233);
     }
-    .date > p:last-child {
+    .date > div > p:first-child {
+        text-align: right;
+        font-size: 1.5em;
+    }
+    /* Discription */
+    .date > div > p:last-child {
         font-size: 0.7em;
     }
 /*#endregion*/
