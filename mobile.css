@@ -1,39 +1,42 @@
-/*----- Navagation Bar -----*//*
+/*----- Section 1 (Logo and Ariel image) -----*//*
 #region*/
-    nav {
-        display: flex;
-        height: auto;
-        justify-content: right;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    
-    .hamburger {
-        padding: 15px;
-        display: block;
-        margin-left: auto;
-        
-    }
-    nav ul {
-        height: 0;
-        flex-direction: column;
-        transition: height 300ms ease-in-out;
-    }
-    nav a {
-        width: 100%;
-        display: inherit;
-        text-align: center;
-    }
-    .responsive ul{
-        display: flex;
-        flex-direction: column;
-    }
+    /*----- Grid Container -----*//*
+    #region*/
+        /* Grid Container */
+        #section-1 > .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            't a'
+            'l a';
+
+            align-items: center;
+            justify-items: center;
+
+            column-gap: 5vw;
+            width: 100%;
+        }
+
+        /* Presenting message */
+        #section-1 > .grid-container > p {
+            grid-area: t;
+            color: white;
+            font-size: 2.5vw;
+            text-align: center;
+        }
+
+        /* Logo */
+        #logo {
+            grid-area: l;
+        }
+
+        /* Ariel image */
+        #ariel-image {
+            grid-area: a;
+        }
+    /*#endregion*/
+    /* Grid Container */
+
 
 /*#endregion*/
-/*----- Section 3 (Music) -----*//*
-#region*/
-#section-3 > .content {
-    flex-direction: column;
-}
-/*#endregion*/
-
