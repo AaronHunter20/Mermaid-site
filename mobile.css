@@ -1,42 +1,44 @@
-/*----- Section 1 (Logo and Ariel image) -----*//*
-#region*/
-    /*----- Grid Container -----*//*
+@media screen and (max-width: 800px) {
+
+    /*----- Section 1 (Logo and Ariel image) -----*//*
     #region*/
+        /*----- Grid Container -----*//*
+        #region*/
+            #section-1 {
+                
+            }
+            /* Grid Container */
+            #section-1 > .grid-container {
+                width: 100%;
+            }
+
+            /* Presenting message */
+            #section-1 > .grid-container > p {
+                font-size: 2.5vw;
+            }
+        /*#endregion*/
         /* Grid Container */
-        #section-1 > .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas: 
-            't a'
-            'l a';
+    /*#endregion*/
+    
+    /*----- Section 3 (Music) -----*//*
+    #region*/
+    #section-3 > .content{
+        flex-direction: column;
+    }
+    #guide-vocals {
+        margin-right: 0px;
+    }
+    #performance-tracks {
+        margin-top: 25px;
+    }
+    /*#endregion*/
+}
 
-            align-items: center;
-            justify-items: center;
-
-            column-gap: 5vw;
-            width: 100%;
-        }
-
-        /* Presenting message */
-        #section-1 > .grid-container > p {
-            grid-area: t;
-            color: white;
-            font-size: 2.5vw;
-            text-align: center;
-        }
-
-        /* Logo */
-        #logo {
-            grid-area: l;
-        }
-
-        /* Ariel image */
-        #ariel-image {
-            grid-area: a;
+@media screen and (max-width: 600px) {
+    /*----- Section base styles -----*//*
+        #region*/
+        .section-img {
+            width: 85%;
         }
     /*#endregion*/
-    /* Grid Container */
-
-
-/*#endregion*/
+}
