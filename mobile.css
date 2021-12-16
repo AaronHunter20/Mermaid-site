@@ -1,0 +1,14 @@
+/*----- Navagation Bar -----*//*
+#region*/
+    nav {
+        justify-content: left;
+    }
+    nav img {
+        width: 65px;
+        padding: 10px;
+        display: flex;
+    }
+    nav ul {
+        display: none;
+    }
+/*#endregion*/

@@ -25,22 +25,19 @@
     }
     nav ul {
         list-style: none;
-        justify-content: center;
         display: inherit;
     }
-    nav ul li {
+    nav li {
         display: inherit;
     }
-    nav ul li a {
+    nav a {
         text-decoration: none;
-        justify-content: center;
         color: black;
         font-size: 1.3em;
         font-weight: 500;
         padding: 0.8em 1em;
-        align-self: center;
     }
-    nav ul li a:hover {
+    nav a:hover {
         transition: background-color 300ms ease-in-out,
                     padding-right 300ms ease-in-out,
                     padding-left 300ms ease-in-out;
@@ -48,13 +45,17 @@
         padding-right: 1.3em;
         padding-left: 1.3em;
     }
-    nav ul li :not(a:hover) {
+    nav li :not(a:hover) {
         transition: background-color 300ms ease-in-out,
                     padding-right 300ms ease-in-out,
                     padding-left 300ms ease-in-out;
         background-color: rgb(255, 255, 255);
         padding-right: 1em;
         padding-left: 1em;
+    }
+
+    nav img {
+        display: none;
     }
 /*#endregion*/
 
