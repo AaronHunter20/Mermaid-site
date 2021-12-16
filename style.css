@@ -249,4 +249,7 @@
         font-weight: 100;
         font-size: 1.2em;
     }
+    #section-4 p {
+        width: 70vw;
+    }
 /*#endregion*/
