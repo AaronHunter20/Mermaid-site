@@ -1,14 +1,36 @@
 /*----- Navagation Bar -----*//*
 #region*/
     nav {
-        justify-content: left;
+        display: flex;
     }
+    
     nav img {
         width: 65px;
+        height: 65px;
+        margin-left: auto;
         padding: 10px;
         display: flex;
+
     }
     nav ul {
         display: none;
     }
+    nav li {
+        display: flex;
+        justify-content: right;
+    }
+    .responsive {
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .responsive a {
+        flex: 1;
+        text-align: right;
+    }
+
 /*#endregion*/

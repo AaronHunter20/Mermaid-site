@@ -57,6 +57,20 @@
     nav img {
         display: none;
     }
+
+    .hamburger:hover {
+        transition: background-color 300ms ease-in-out;
+        background-color: rgb(237, 237, 237);
+    }
+    .hamburger:not(:hover) {
+        transition: background-color 300ms ease-in-out;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav a:active, .hamburger:active {
+        transition: background-color 100ms ease-in-out;
+        background-color: rgb(230, 230, 230);
+    }
 /*#endregion*/
 
 #main {
