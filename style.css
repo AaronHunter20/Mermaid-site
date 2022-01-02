@@ -18,6 +18,7 @@
     nav {
         display: flex;
         position: sticky;
+        height: auto;
         top: 0;
         justify-content: center;
         background-color: white;
@@ -27,15 +28,13 @@
         list-style: none;
         display: inherit;
     }
-    nav li {
-        display: inherit;
-    }
     nav a {
+        display: flex;
         text-decoration: none;
         color: black;
         font-size: 1.3em;
         font-weight: 500;
-        padding: 0.8em 1em;
+        padding: 1.2em 1.5em;
     }
     nav a:hover {
         transition: background-color 300ms ease-in-out,
@@ -46,7 +45,7 @@
         padding-left: 1.3em;
     }
     nav li :not(a:hover) {
-        transition: background-color 300ms ease-in-out,
+        transition: background-color 300ms ease-in-out, 
                     padding-right 300ms ease-in-out,
                     padding-left 300ms ease-in-out;
         background-color: rgb(255, 255, 255);
@@ -73,10 +72,8 @@
     }
 /*#endregion*/
 
-#main {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    flex-direction: column; 
+.main {
+    background-color: white;
+    font-size: 5em;
 }
 

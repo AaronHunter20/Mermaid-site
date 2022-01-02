@@ -2,35 +2,29 @@
 #region*/
     nav {
         display: flex;
+        height: auto;
+        justify-content: right;
+        flex-direction: column;
+        overflow: hidden;
     }
     
-    nav img {
-        width: 65px;
-        height: 65px;
+    .hamburger {
+        padding: 15px;
+        display: block;
         margin-left: auto;
-        padding: 10px;
-        display: flex;
-
+        
     }
     nav ul {
-        display: none;
-    }
-    nav li {
-        display: flex;
-        justify-content: right;
-    }
-    .responsive {
-        display: flex;
+        height: 0;
         flex-direction: column;
+        transition: height 300ms ease-in-out;
+    }
+    nav a {
+        width: 100%;
     }
     .responsive ul{
         display: flex;
         flex-direction: column;
-    }
-
-    .responsive a {
-        flex: 1;
-        text-align: right;
     }
 
 /*#endregion*/
