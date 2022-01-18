@@ -7,7 +7,6 @@ window.onload = () => {
 
     // Set up variables
     let linkHeight = parseInt(a.getBoundingClientRect().height) + "px";
-    let navExtendHeight = parseInt(a.getBoundingClientRect().height * 4) + "px";
 
     // Set hamburger icon to the same height as the anchor links
     hamburger.style.width = linkHeight;
@@ -17,7 +16,7 @@ window.onload = () => {
 
     function navOn() {
         navToggle = true;
-        ul.style.height = navExtendHeight;
+        ul.style.height = "auto";
         console.log("expanded nav");
     }
     function navOff() {
@@ -33,9 +32,10 @@ window.onload = () => {
         }
     }
     window.onresize = () => {
-        if (window.innerWidth > 500 && navToggle) {
+        if (window.innerWidth > 500) {
+            navOn();
+        } else {
             navOff();
-            ul.style.height = "auto";
         }
     }
     hamburger.addEventListener("click", toggleNav);
