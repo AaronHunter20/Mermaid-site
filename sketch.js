@@ -8,7 +8,7 @@ function preload() {
 }
 function setup() {
     let Canvas = createCanvas(windowWidth, 400);
-    Canvas.parent("canvas-wrapper");
+    Canvas.parent("canvas-container");
 }
 function draw() {
     interval += 1;
