@@ -72,8 +72,10 @@
     }
 /*#endregion*/
 
-.main {
-    background-color: white;
-    font-size: 5em;
-}
+/*----- Section 1 (Ariel imag) -----*//*
+#region*/
+    .p5Canvas {
+        position: absolute;
+    }
+/*#endregion*/
 
