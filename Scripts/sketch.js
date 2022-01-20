@@ -3,13 +3,8 @@ let bImg;
 
 let rand;
 let interval = 0;
-function preload() {
-    bImg = loadImage('./Assets/Icons/bubble.png');
-}
-function setup() {
-    let Canvas = createCanvas(windowWidth, 400);
-    Canvas.parent("canvas-container");
-}
+
+
 function draw() {
     interval += 1;
     rand = random(0, width + 1);
@@ -34,7 +29,4 @@ function draw() {
             bubbles.splice(i, 1);
         }
     }
-}
-function windowResized () {
-    resizeCanvas(windowWidth, 400);
 }

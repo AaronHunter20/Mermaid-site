@@ -75,7 +75,14 @@
 /*----- Section 1 (Ariel imag) -----*//*
 #region*/
     .p5Canvas {
+        z-index: -10;
         position: absolute;
+    }
+    .ariel-img {
+        width: 200px;
+    }
+    .title-img {
+        width: 200px;
     }
 /*#endregion*/
 

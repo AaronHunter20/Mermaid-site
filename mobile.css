@@ -23,7 +23,7 @@
         width: 100%;
         display: inherit;
         justify-content: right;
-        text-align: center;
+        text-align: right;
     }
     .responsive ul{
         display: flex;
