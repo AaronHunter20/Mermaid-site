@@ -86,3 +86,63 @@
     }
 /*#endregion*/
 
+/*----- Section 2 -----*//*
+#region*/
+    #date {
+        margin: 15px;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    #calendar-container {
+        --n: 7;
+        scroll-margin-top: 250px;
+        width: 80vw;
+        display: grid;
+        grid-template-columns:repeat(auto-fill,minmax(max(170px,100%/var(--n)),1fr));
+        grid-template-rows: repeat(2, auto);    
+        gap: 10px;
+
+        grid-auto-flow: row;
+    }
+    /* Date boxes */
+    .date {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: rgb(193, 193, 193) 0px 2px 5px;
+        
+    }
+    /* date content container */
+    .date > div {
+        padding: 10px;
+    }
+    /* Date Day */
+    .date > p:first-child {
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(233, 233, 233);
+    }
+    /* Date Number */
+    .date > div > p:first-child {
+        text-align: right;
+        font-size: 2em;
+    }
+    /* Discription */
+    .date > div > p:last-child {
+        font-size: 0.9em;
+    }
+    /*#endregion*/
+
+    /*----- Section 3 (Music) -----*//*
+    #region*/
+    #section-3 > .content{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    #guide-vocals {
+        margin-right: 50px;
+    }
+/*#endregion*/
+/* Calendar month */
