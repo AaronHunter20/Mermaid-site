@@ -9,14 +9,14 @@ class Bubble {
     }
     draw(img) {
         imageMode(CENTER);
-        image(img,this.x, this.y, this.size, this.size);
+        image(img, this.x, this.y, this.size, this.size);
     }
 
     move() {
         this.frame += 0.02;
         this.y += -this.speed;
         this.x += map(sin(this.frame), 1, -1, 0.1, -0.1);
-        if (this.y < 30) {
+        if (this.y < -10) {
             this.pop = true;
         }
     }
