@@ -24,7 +24,7 @@ function navOff() {
 function setup() {
     // Get document elements
     body = document.querySelector("body");
-    grid = document.querySelector(".grid-container");
+    main = document.querySelector(".section-1 .main");
     container = document.getElementById('canvas-container');
     hamburger = document.querySelector(".hamburger");
     ul =  document.querySelector("nav ul");
@@ -41,8 +41,8 @@ function setup() {
     Canvas.parent("canvas-container");
 
     // Setup grid width and height
-    grid.style.width = parseInt(windowWidth) + "px";
-    grid.style.height = parseInt(windowHeight - linkHeight + 1) + "px";
+    main.style.width = parseInt(windowWidth) + "px";
+    main.style.height = parseInt(windowHeight - linkHeight + 1) + "px";
 
     // Set hamburger icon to the same height as the anchor links
     hamburger.style.width = parseInt(linkHeight) + "px";
@@ -63,8 +63,8 @@ function setup() {
 }
 function windowResized() {
     // update grid width and height
-    grid.style.width = parseInt(windowWidth) + "px";
-    grid.style.height = parseInt(windowHeight - linkHeight + 1) + "px";
+    main.style.width = parseInt(windowWidth) + "px";
+    main.style.height = parseInt(windowHeight - linkHeight + 1) + "px";
 
     if (windowWidth < 501) {
         navOff();

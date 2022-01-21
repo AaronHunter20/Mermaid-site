@@ -20,6 +20,9 @@
         font-size: 3em;
         padding: 25px;
     }
+    .section-img {
+        width: 300px;
+    }
     .section {
         padding: var(--padding);
         display: flex;
@@ -93,9 +96,18 @@
         z-index: -10;
         position: absolute;
     }
-    .grid-container {
-        padding: var(--padding);
+    .main {
         display: flex;
+        flex-direction: column;
+        padding: var(--padding);
+    }
+    .img-box {
+        flex: 1;
+        flex-direction: row;
+        display: flex;
+    }
+    .button-box {
+        
     }
     .ariel-img {
         flex: 1;
