@@ -31,6 +31,7 @@
         background-color: white;
     }
 /*#endregion*/
+
 /*----- Navagation Bar -----*//*
 #region*/
     nav {
@@ -100,26 +101,42 @@
         display: flex;
         flex-direction: column;
         padding: var(--padding);
+        justify-content: space-between;
     }
     .img-box {
-        flex: 1;
-        flex-direction: row;
+        height: 80%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
     }
-    .button-box {
-        
+    .img-box img {
+        height: calc(50vw - var(--padding)*2);
+        max-height: 100%;
     }
     .ariel-img {
-        flex: 1;
-        width: 0;
-        flex-basis: 0;
         grid-area: a;
     }
     .title-img {
-        flex: 1;
-        width: 0;
-        flex-basis: 0;
         grid-area: t;
+    }
+    .button-box {
+        width: 75%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .button-box .button-1 {
+        margin-right: var(--padding);
+    }
+    .button-box a {
+        border-radius: 5px;
+        flex: 1;
+        padding: 25px;
+        text-decoration: none;
+        text-align: center;
+        background-color: white;
+        color: black;
     }
 /*#endregion*/
 
