@@ -9,7 +9,7 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" media="screen and (max-width: 500px)" href="./mobile.css">
-    <link rel="stylesheet" media="screen and (max-width: 850px)" href="./tablet.css">
+    <link rel="stylesheet" media="screen and (orientation:portrait)" href="./tablet.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,18 +33,18 @@
                 <a draggable="false" href="#section-1">Home</a>
             </li>
             <li>
-                <a draggable="false" href="#section-2">FAQ</a>
+                <a draggable="false" href="#section-2">Calendar</a>
             </li>
             <li>
                 <a draggable="false" href="#section-3">Music</a>
             </li>
             <li>
-                <a draggable="false" href="#section-4">Calendar</a>
+                <a draggable="false" href="#section-4">FAQ</a>
             </li>
         </ul>
     </nav>
     <div>
-        <div class="section-1">
+        <div id="section-1" class="section-1">
             <div id="canvas-container"></div>
             <div class="main">
                 <div class="img-box">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-2">
+        <div id="section-2" class="section-2">
             <div class="section" id="section-2">
                 <h1>Calendar</h1>
 
@@ -194,8 +194,12 @@
                 </div>
             </div>
         </div>
-        <div class="section-3"></div>
-        <div class="section-4"></div>
+        <div id="section-3" class="section-3">
+
+        </div>
+        <div id="section-4" class="section-4">
+
+        </div>
     </div>
 </body>
 

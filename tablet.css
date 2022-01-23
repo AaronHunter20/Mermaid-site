@@ -1,13 +1,13 @@
 /*----- Section 1 (Ariel image) -----*//*
 #region*/
     .img-box {
-        max-height: initial;
-        max-width: initial;
+        height: 85%;
         flex-direction: column;
     }
     .img-box img {
-        flex: 1;
-        max-height: initial;
-        max-height: initial;
+        height: 50%;
+    }
+    .button-box {
+        width: 100%;
     }
 /*#endregion*/

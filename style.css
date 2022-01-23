@@ -10,7 +10,7 @@
     body {
         width: 100vw;
         background-color: rgb(242, 242, 242);
-        --padding: 50px;
+        --padding: 5vmin;
     }
 /*#endregion*/
 
@@ -113,12 +113,6 @@
     .img-box img {
         height: calc(50vw - var(--padding)*2);
         max-height: 100%;
-    }
-    .ariel-img {
-        grid-area: a;
-    }
-    .title-img {
-        grid-area: t;
     }
     .button-box {
         width: 75%;

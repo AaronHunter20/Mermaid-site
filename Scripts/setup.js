@@ -45,7 +45,7 @@ function setup() {
     main.style.height = parseInt(windowHeight - linkHeight + 1) + "px";
 
     // Set hamburger icon to the same height as the anchor links
-    hamburger.style.width = parseInt(linkHeight) + "px";
+    hamburger.style.width = parseInt(Math.round(linkHeight)) + "px";
 
     // Set up a variable to represent the toggle state of the nav bar
     navToggle = false;
