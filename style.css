@@ -51,7 +51,7 @@
         display: flex;
         text-decoration: none;
         color: black;
-        font-size: 1.3em;
+        font-size: 3vh;
         font-weight: 500;
         padding: 1.2em 1.5em;
     }
@@ -126,7 +126,9 @@
     .button-box a {
         border-radius: 5px;
         flex: 1;
-        padding: 25px;
+        font-size: ;
+        font-weight: 500;
+        padding: 5vmin;
         text-decoration: none;
         text-align: center;
         background-color: white;
