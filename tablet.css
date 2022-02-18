@@ -11,3 +11,15 @@
         width: 100%;
     }
 /*#endregion*/
+/*----- Section 3 (Music) -----*//*
+#region*/
+#section-3 > .content {
+    flex-direction: column;
+}
+#guide-vocals {
+    margin: 0;
+}
+#performance-tracks {
+    margin: 25px 0 0 0;
+}
+/*#endregion*/

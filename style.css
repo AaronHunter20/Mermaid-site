@@ -21,9 +21,11 @@
         padding: 25px;
     }
     .section-img {
-        width: 300px;
+        margin: 30px;
+        width: max(300px, 35vw);
     }
     .section {
+        scroll-margin-top: 82px;
         padding: var(--padding);
         display: flex;
         flex-direction: column;
@@ -91,13 +93,17 @@
     }
 /*#endregion*/
 
-/*----- Section 1 (Ariel image) -----*//*
+/*----- Section 1 (Home) -----*//*
 #region*/
+    #section-1 {
+        scroll-margin-top: 82px;
+    }
     .p5Canvas {
         z-index: -10;
         position: absolute;
     }
     .main {
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         padding: var(--padding);
@@ -136,7 +142,7 @@
     }
 /*#endregion*/
 
-/*----- Section 2 -----*//*
+/*----- Section 2 (Calendar) -----*//*
 #region*/
     .content {
         width: 100%;
@@ -188,6 +194,50 @@
     .date > div > p:last-child {
         font-size: 0.9em;
     }
-    /*#endregion*/
 /*#endregion*/
-/* Calendar month */
+
+/*----- Section 3 (Music) -----*//*
+#region*/
+    #section-3 {
+        justify-items: center;
+    }
+    #section-3 > .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #section-3 .section-img {
+        margin: 25px;
+    }
+    #guide-vocals {
+        margin-right: 50px;
+    }
+    #guide-vocals > h2, #performance-tracks > h2{
+        margin-bottom: 10px;
+    }
+/*#endregion*/
+
+/*----- Section 4 (FAQ) -----*//*
+#region*/
+    .question-group:last-of-type {
+        margin: 0;
+    }
+    .question-group {
+        margin-bottom: 30px;
+    }
+    #section-4 .question-group, h2, p {
+        width: 100%;
+    }
+    #section-4 .content {
+        text-align: left;
+    }
+
+    .question {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .answer {
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+/*#endregion*/

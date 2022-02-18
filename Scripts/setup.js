@@ -37,7 +37,7 @@ function setup() {
     body.style.setProperty('--navHeight', "linkHeight");
 
     // Setup canvas
-    let Canvas = createCanvas(windowWidth, windowHeight - linkHeight);
+    let Canvas = createCanvas(windowWidth, Math.max(windowHeight - linkHeight, 500));
     Canvas.parent("canvas-container");
 
     // Setup grid width and height
@@ -71,5 +71,5 @@ function windowResized() {
     } else {
         navOn();
     }
-    resizeCanvas(windowWidth, windowHeight - linkHeight);
+    resizeCanvas(windowWidth, Math.max(windowHeight - linkHeight, 500));
 }

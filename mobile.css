@@ -30,3 +30,10 @@
     }
 
 /*#endregion*/
+/*----- Section 3 (Music) -----*//*
+#region*/
+#section-3 > .content {
+    flex-direction: column;
+}
+/*#endregion*/
+
