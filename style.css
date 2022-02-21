@@ -152,6 +152,7 @@
         background-color: white;
     }
     #date {
+        text-align: center;
         margin: 15px;
         font-size: 2.2em;
     }
