@@ -1,44 +1,39 @@
-@media screen and (max-width: 800px) {
+/*----- Navagation Bar -----*//*
+#region*/
+nav {
+    display: flex;
+    height: auto;
+    justify-content: right;
+    flex-direction: column;
+    overflow: hidden;
+}
 
-    /*----- Section 1 (Logo and Ariel image) -----*//*
-    #region*/
-        /*----- Grid Container -----*//*
-        #region*/
-            #section-1 {
-                
-            }
-            /* Grid Container */
-            #section-1 > .grid-container {
-                width: 100%;
-            }
-
-            /* Presenting message */
-            #section-1 > .grid-container > p {
-                font-size: 2.5vw;
-            }
-        /*#endregion*/
-        /* Grid Container */
-    /*#endregion*/
+.hamburger {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
     
-    /*----- Section 3 (Music) -----*//*
-    #region*/
-    #section-3 > .content{
-        flex-direction: column;
-    }
-    #guide-vocals {
-        margin-right: 0px;
-    }
-    #performance-tracks {
-        margin-top: 25px;
-    }
-    /*#endregion*/
+}
+nav ul {
+    height: 0;
+    flex-direction: column;
+    transition: height 300ms ease-in-out;
+}
+nav a {
+    width: 100%;
+    display: inherit;
+    text-align: center;
+}
+.responsive ul{
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
-    /*----- Section base styles -----*//*
-        #region*/
-        .section-img {
-            width: 85%;
-        }
-    /*#endregion*/
+/*#endregion*/
+/*----- Section 3 (Music) -----*//*
+#region*/
+#section-3 > .content {
+flex-direction: column;
 }
+/*#endregion*/
+
