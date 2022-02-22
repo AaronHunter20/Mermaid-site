@@ -32,6 +32,9 @@
         align-items: center;
         background-color: white;
     }
+    audio {
+        z-index: -99;
+    }
 /*#endregion*/
 
 /*----- Navagation Bar -----*//*
@@ -44,6 +47,7 @@
         justify-content: center;
         background-color: white;
         box-shadow: 0px -5px 10px rgb(0, 0, 0);
+        z-index: 99;
     }
     nav ul {
         list-style: none;
@@ -140,6 +144,9 @@
         background-color: white;
         color: black;
     }
+    .button-box a {
+        
+    }
 /*#endregion*/
 
 /*----- Section 2 (Calendar) -----*//*
@@ -220,6 +227,10 @@
 
 /*----- Section 4 (FAQ) -----*//*
 #region*/
+    #section-4 .content {
+        width: 75%;
+        text-align: left;
+    }
     .question-group:last-of-type {
         margin: 0;
     }
@@ -228,9 +239,6 @@
     }
     #section-4 .question-group, h2, p {
         width: 100%;
-    }
-    #section-4 .content {
-        text-align: left;
     }
 
     .question {
